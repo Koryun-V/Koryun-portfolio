@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Koryun Vardanyan - Portfolio</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+<body>
+
+<header id="home">
+    <div class="header-block">
+        <div class="avatar">
+            <img src="images/avatar/avatar.png" alt="Koryun Vardanyan">
+        </div>
+        <h1>Koryun Vardanyan</h1>
+        <p>Frontend Developer</p>
+    </div>
+
+</header>
+
+<nav>
+    <div class="mobile-nav">
+        <span class="current-section" id="currentSection">Home</span>
+        <button class="menu-toggle" id="menuToggle" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>  <!-- այստեղ -->
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contacts" id="link-contact">Contacts</a></li>
+    </ul>
+</nav>
+<div id="backdrop"></div>
+
+<main>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a frontend developer with advanced knowledge of <span>React.js</span>, <span>React Native</span>, and <span>modern JavaScript (ES6+)</span>. I
+            have practical experience in building responsive web applications and mobile apps.
+
+            I am proficient in modern frontend technologies including <span>HTML5</span>, <span>CSS3</span>, <span>Sass (SCSS)</span>,
+            <span>Bootstrap</span>, and <span>TypeScript</span>.
+
+            I love writing clean and efficient code, working in a team and constantly developing my skills, striving to
+            create high-quality and user-friendly interfaces.
+        </p>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <ul class="education-list">
+            <li class="list-block">
+                <img class="edu-logo" src="images/educations/techno-logo.png" alt="Techno-Educational Academy logo"/>
+                <div>
+                    <strong>Techno-Educational Academy</strong>
+                    <p>I completed a 10-month web programming course (HTML, CSS, Bootstrap, JavaScript, React․js, Redux,
+                        React Native). After the course, I participated in a 2-month exam project and received a
+                        certificate.</p>
+                    <div class="em-block">
+                        <em>2023 - 2024</em>
+                    </div>
+                </div>
+            </li>
+            <li class="list-block">
+                <img class="edu-logo" src="images/educations/gtc-logo.png" alt="GTC logo"/>
+                <div>
+                    <strong>Gyumri Technology Center (GTC)</strong>
+                    <ul>
+                        <li>Participated in a three-month Web Development course organized by GTC and received a
+                            certificate
+                            upon completion.
+                        </li>
+                        <li>Participated in a three-month JavaScript/jQuery Fundamentals course organized by GTC and
+                            received a certificate upon completion.
+                        </li>
+                    </ul>
+                    <div class="em-block">
+                        <em>2018</em>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </section>
+
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill-block">
+                <img class="skill-logo" src="images/skills/html5-original.svg"
+                     alt="HTML5 logo"/>
+                <div class="skill-name">HTML5</div>
+            </div>
+            <div class="skill-block">
+                <img class="skill-logo" src="images/skills/css3-original.svg"
+                     alt="CSS3 logo"/>
+                <div class="skill-name">CSS3</div>
+            </div>
+            <div class="skill-block">
+                <img class="skill-logo" src="images/skills/sass-original.svg"/>
+                <div class="skill-name">Sass (SCSS)</div>
+            </div>
+            <div class="skill-block">
+                <img class="skill-logo" src="images/skills/bootstrap-logo.svg"
+                     alt="Bootstrap logo"/>
+                <div class="skill-name">Bootstrap</div>
+            </div>
+            <div class="skill-block">
+                <img class="skill-logo"
+                     src="images/skills/javascript-original.svg"
+                     alt="JavaScript logo"/>
+                <div class="skill-name">JavaScript (ES6+)</div>
+            </div>
+            <div class="skill-block">
+                <img class="skill-logo" src="images/skills/jquery-original.svg"
+                     alt="jQuery logo"/>
+                <div class="skill-name">jQuery</div>
+            </div>
+            <div class="skill-block">
+                <img class="skill-logo"
+                     src="images/skills/typescript-original.svg    "
+                     alt="TypeScript logo"/>
+                <div class="skill-name">TypeScript</div>
+            </div>
+            <div class="skill-block">
+                <img class="skill-logo" src="images/skills/react-original.svg"
+                     alt="React logo"/>
+                <div class="skill-name">React.js</div>
+            </div>
+            <div class="skill-block">
+                <img class="skill-logo" src="images/skills/redux-original.svg"
+                     alt="Redux logo"/>
+                <div class="skill-name">Redux</div>
+            </div>
+            <div class="skill-block">
+                <img class="skill-logo" src="images/skills/react-original.svg" alt="React Native logo"
+                />
+                <div class="skill-name">React Native</div>
+            </div>
+            <div class="skill-block">
+                <img class="skill-logo" src="images/skills/git-original.svg"
+                     alt="Git logo"/>
+                <div class="skill-name">Git</div>
+            </div>
+            <div class="skill-block">
+                <img class="skill-logo" src="images/skills/github-original.svg"
+                     alt="GitHub logo"/>
+                <div class="skill-name">GitHub</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project" id="project1">
+            <img src="images/projects/multify-market-bg.png" alt="Project Screenshot"/>
+            <div class="project-content">
+                <div class="title-block">
+                    <img src="images/projects/multify-market.png"/>
+
+                    <div>
+                        <h3>Multify Market — User Website</h3>
+                        <strong>Team Project at Techno-Educational Academy</strong>
+
+                    </div>
+
+
+                </div>
+
+                <p class="project-desc" id="desc1"
+                   style=" overflow: hidden; transition: max-height 0.3s ease;">
+                    A prototype component of the <strong>Multify Market</strong> platform — a multi-vendor e-commerce
+                    website that allows
+                    customers to browse various stores and make seamless online purchases. I contributed to the
+                    development
+                    of the main user interface, focusing on product listing pages and overall user experience. This
+                    experimental team project was developed independently from the final academy coursework, as part of
+                    a
+                    practical team collaboration at <strong>Techno-Educational Academy</strong>.
+                </p>
+                <br/>
+                <div class="project-links">
+                    <a href="https://multify-market.onrender.com" target="_blank" class="project-link">View Website</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project" id="project2">
+            <img src="images/projects/multify-market-super-admin-bg.png" alt="Project Screenshot"/>
+            <div class="project-content">
+                <div class="title-block">
+                    <img src="images/projects/multify-market.png" style="background: #1a1c24; "/>
+                    <div>
+                        <h3>Multify Market – Super Admin Panel</h3>
+                        <strong>Solo Project (part of Multify Market platform) at Techno-Educational Academy</strong>
+                    </div>
+                </div>
+                <p class="project-desc" id="desc2"
+                   style=" overflow: hidden; transition: max-height 0.3s ease;">
+                    I solely designed and developed the <strong>Super Admin Panel</strong> for <strong>Multify
+                    Market</strong> — a management dashboard for
+                    overseeing the entire platform. This interface included full layout design, custom UI components,
+                    and
+                    frontend integration with backend APIs. The panel offers high-level control over stores, users, and
+                    global settings. </p>
+                <br/>
+                <div class="project-links">
+                    <a href="https://drive.google.com/file/d/19rGAZE9epiRcAna0Qhs3A9BYfu2RAMcD/view?usp=sharing" target="_blank" class="project-link">View Preview (PDF)</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="project" id="project4">
+
+            <img src="images/projects/unsplash-bg.png" alt="Project Screenshot"
+                 style="background: white;"/>
+
+            <div class="project-content">
+                <div class="title-block">
+                    <img src="images/projects/unsplash.png" style="padding:10px;"/>
+                    <div>
+                        <h3>Unsplash clone</h3>
+                        <strong>Final Project at Techno-Educational Academy</strong>
+                    </div>
+                </div>
+                <p class="project-desc" id="desc4" style=" overflow: hidden; transition: max-height 0.3s ease;">
+
+                    Developed as a final 2-month project after completing a 10-month web programming course at <strong>Techno-Educational
+                    Academy</strong>.
+                    Built using <span>HTML5</span>, <span>CSS3</span>, <span>Sass(SCSS)</span>,
+                    <span>JavaScript(ES6+)</span>, <span>React.js</span>, <span>Redux</span>, and
+                    <span>React Native</span>.
+                    Web & Mobile versions implemented.
+                    Features a responsive image gallery, search functionality, and clean UI inspired by
+                    <strong>Unsplash</strong>.
+                </p>
+                <br/>
+                <div class="project-links">
+                    <a href="https://unsplash-platform.onrender.com" target="_blank" class="project-link">View Website</a>
+                    <div class="line"></div>
+                    <a href="https://drive.google.com/file/d/1ZiuouWgX_kwfaDiEYmo7dT3nAKUAK9GW/view?usp=sharing" target="_blank" class="project-link">Download APK</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project" id="project5">
+            <img src="images/projects/interior-bg.png" alt="Project Screenshot"/>
+            <div class="project-content">
+                <div class="title-block">
+                    <img src="images/projects/interior.png"/>
+                    <div>
+                        <h3>Inodino</h3>
+                        <strong>Responsive single page site</strong>
+                    </div>
+                </div>
+                <p class="project-desc" id="desc5"
+                   style=" overflow: hidden; transition: max-height 0.3s ease;">
+                    This is a responsive single page site designed to look great on all devices using media queries.
+                    Built
+                    with <span>HTML5</span>, <span>CSS3</span>, <span>Sass (SCSS)</span>, and a bit of
+                    <span>JavaScript</span> for interactivity. </p>
+                <br/>
+                <div class="project-links">
+                    <a href="https://inodino-responsive.onrender.com" target="_blank" class="project-link">View Website</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" style="padding:0;max-width: 100%">
+        <div class="title-contact" style="margin: auto">
+            <h2>Contacts</h2>
+
+        </div>
+        <div class="contacts-bg">
+            <div class="contacts">
+                <a id="email-link" target="_blank" href="mailto:koryun.vardanyan.2002@gmail.com">
+                    <img src="images/contacts/email.png" alt="Email"/>
+                </a>
+                <a id="linkedin-link" href="https://www.linkedin.com/in/koryun-vardanyan" target="_blank">
+                    <img src="images/contacts/linkedin.png" alt="LinkedIn"/>
+                </a>
+                <a id="telegram-link" href="https://t.me/koryun_developer" target="_blank">
+                    <img src="images/contacts/telegram.png" alt="Telegram"/>
+                </a>
+            </div>
+        </div>
+
+    </section>
+</main>
+
+
+<footer>
+    <div class="footer-block">
+        <p>&copy; 2025 Koryun Vardanyan. All rights reserved.</p>
+    </div>
+</footer>
+
+
+<script src="script/script.js" defer></script>
+</body>
+</html>
