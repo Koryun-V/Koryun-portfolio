@@ -135,3 +135,48 @@ if (isMobile()) {
     telegramLink.target = "_blank";
     telegramLink.rel = "noopener noreferrer";
 }
+
+function test (arg){
+    for(let i = 1; i <= arg; i++) {
+        let space = " ".repeat(arg - i);
+        let stars = "*".repeat(2 * i - 1);
+
+        console.log(space + stars)
+    }
+}
+
+test(5)
+function pyramid(n) {
+    for (let i = 1; i <= n; i++) {
+        // ձախի դատարկություններ
+        let spaces = " ".repeat(n - i);
+        // աստղեր (յուրաքանչյուր մակարդակ աճում է 2-ով)
+        let stars = "*".repeat(2 * i - 1);
+        console.log(spaces + stars);
+    }
+}
+
+pyramid(5);
+function pyramid(n) {
+    for (let i = 1; i <= n; i++) {
+        let row = "";
+
+        // spaces (ձախից դատարկություններ)
+        for (let s = 0; s < n - i; s++) {
+            row += " ";
+        }
+
+        // stars (աստղերը, 2*i - 1 հատ)
+        for (let j = 0; j < 2 * i - 1; j++) {
+            row += "*";
+        }
+
+        console.log(row);
+    }
+}
+
+pyramid(5);
+
+
+
+console.log("Hello, \n\tworld!")
